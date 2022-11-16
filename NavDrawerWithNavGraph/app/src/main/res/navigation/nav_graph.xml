@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/callFragment">
+    <fragment
+        android:id="@+id/callFragment"
+        android:name="com.example.navdrawer.CallFragment"
+        android:label="call_fragment"
+        tools:layout="@layout/call_fragment" >
+        <action
+            android:id="@+id/action_callFragment_to_activityFragment"
+            app:destination="@id/activityFragment" />
+        <action
+            android:id="@+id/action_callFragment_to_galleryFragment"
+            app:destination="@id/galleryFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/activityFragment"
+        android:name="com.example.navdrawer.ActivityFragment"
+        android:label="activity_fragment"
+        tools:layout="@layout/activity_fragment" >
+        <action
+            android:id="@+id/action_activityFragment_to_galleryFragment"
+            app:destination="@id/galleryFragment" />
+        <action
+            android:id="@+id/action_activityFragment_to_callFragment"
+            app:destination="@id/callFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/galleryFragment"
+        android:name="com.example.navdrawer.GalleryFragment"
+        android:label="gallery_fragment"
+        tools:layout="@layout/gallery_fragment" >
+        <action
+            android:id="@+id/action_galleryFragment_to_activityFragment"
+            app:destination="@id/activityFragment" />
+        <action
+            android:id="@+id/action_galleryFragment_to_callFragment"
+            app:destination="@id/callFragment" />
+    </fragment>
+</navigation>

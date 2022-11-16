@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">ClockApp</string>
+    <string-array name="time_zones">
+        <item>System time zone</item>
+        <item>Asia/Ho_Chi_Minh</item>
+        <item>Japan</item>
+        <item>Europe/London</item>
+        <item>Asia/Singapore</item>
+    </string-array>
+</resources>
